@@ -7,6 +7,7 @@ import {
 import { Layout } from "./components";
 import GrowthStrategy from "./pages/GrowthStrategy";
 import ContentAnalysis from "./pages/ContentAnalysis";
+import KnowledgeBase from "./pages/KnowledgeBase";
 import "./index.css";
 
 // 模擬用戶數據
@@ -51,14 +52,7 @@ function App() {
           />
 
           {/* 社群經營知識庫頁面 */}
-          <Route
-            path="/knowledge-base"
-            element={
-              <div className="p-6 bg-white rounded-lg shadow">
-                社群經營知識庫頁面建設中...
-              </div>
-            }
-          />
+          <Route path="/knowledge-base" element={<KnowledgeBase />} />
         </Route>
 
         {/* 404 頁面 */}
