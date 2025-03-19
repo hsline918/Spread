@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { Layout } from "./components";
 import GrowthStrategy from "./pages/GrowthStrategy";
+import ContentAnalysis from "./pages/ContentAnalysis";
 import "./index.css";
 
 // 模擬用戶數據
@@ -37,14 +38,7 @@ function App() {
           <Route path="/growth-strategy" element={<GrowthStrategy />} />
 
           {/* 內容優化分析器頁面 */}
-          <Route
-            path="/content-analysis"
-            element={
-              <div className="p-6 bg-white rounded-lg shadow">
-                內容優化分析器頁面建設中...
-              </div>
-            }
-          />
+          <Route path="/content-analysis" element={<ContentAnalysis />} />
 
           {/* 發文排程日曆頁面 */}
           <Route
